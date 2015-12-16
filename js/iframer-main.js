@@ -1,14 +1,26 @@
 window.onload = function() { init() };
 
-  var public_spreadsheet_url = 'https://docs.google.com/spreadsheet/pub?hl=en_US&hl=en_US&key=0AmYzu_s7QHsmdDNZUzRlYldnWTZCLXdrMXlYQzVxSFE&output=html';
+var public_spreadsheet_url = sheetURL;
 
-  function init() {
-    Tabletop.init( { key: public_spreadsheet_url,
-                     callback: showInfo,
-                     simpleSheet: true } )
-  }
+function init() {
+  Tabletop.init( { key : public_spreadsheet_url,
+                   callback : function (data,tabletop){
+                    $(".content").append(data[0].Code);
+                   },
+                   simpleSheet: true } )
+}
 
-  function showInfo(data, tabletop) {
-    alert("Successfully processed!")
-    console.log(data);
-  }
+
+
+
+
+tabletopObj = Tabletop(
+  { key : public_spreadsheet_url,
+    callback : showInfo,
+    simpleSheet : true
+  } )
+
+function showInfo(data, tabletop) {
+  console.log(data);
+}
+
