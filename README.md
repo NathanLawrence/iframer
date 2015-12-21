@@ -18,5 +18,7 @@ Uses JQuery and Tabletop.js to turn a div and script-based embed code into one t
 ## A Hint About Google Sheets
 By default, Google will assume you're trying to paste into multiple rows if your text has newline characters in it. To avoid this, simply double-click on the cell before pasting.
 
-# A note about DocumentCloud
+# A couple notes about DocumentCloud
 DocumentCloud's code does not include and explicit "http" at the beginning of their JS imports, so DocumentCloud embeds will only work once you are actually accessing the files from a web server. To test with DocumentCloud before deployment, either fire up a local test stack or upload it to a staging module in S3. The "file://" space will not work.
+
+The folks at Vermont Public Radio were also kind enough to point out to me that Tabletop doesn't seem to take kindly to those new line spaces that DocumentCloud includes in its embed code by default. Luckily, they have a little "remove line breaks" link at the top of the embed wizard that solves this problem. If you notice anything else, feel free to email me at [lawrencen@missouri.edu](mailto:lawrencen@missouri.edu) or (digital@kbia.org)[mailto:digital@kbia.org].
