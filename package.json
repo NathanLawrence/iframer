@@ -1,0 +1,28 @@
+{
+  "name": "iframer",
+  "version": "1.1.0",
+  "description": "Uses JQuery and Tabletop.js to turn a div and script-based embed code into one that uses an iframe for maximum compatibility.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NathanLawrence/iframer.git"
+  },
+  "keywords": [
+    "iframe",
+    "embed",
+    "compatibility",
+    "core",
+    "publisher",
+    "public",
+    "media"
+  ],
+  "author": "Nathan Lawrence",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/NathanLawrence/iframer/issues"
+  },
+  "homepage": "https://github.com/NathanLawrence/iframer#readme"
+}
