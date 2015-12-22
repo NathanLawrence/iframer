@@ -3,7 +3,7 @@ window.onload = function() { init() };
 var public_spreadsheet_url = sheetURL;
 
 //URL Parameter Parsing
-//Modified from Stack Overflow, among other things.
+//Modified from Stack Overflow, among other things. I use this code all the time.
 var getUrlParameter = function getUrlParameter(sParam) {
     var sPageURL = decodeURIComponent(window.location.search.substring(1)),
         sURLVariables = sPageURL.split('&'),
