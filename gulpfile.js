@@ -1,6 +1,10 @@
 var gulp = require('gulp'),
-	gutil = require('gulp-util');
+	gutil = require('gulp-util'),
+	concat = require('gulp-concat');
 
-gulp.task('log', function(){
-	gutil.log('workflows are awesome');
+var jsSources = ['components/js/iframer-vars.js', 'components/js/tabletop.js', 'components/js/iframer-main.js'];
+
+gulp.task('compile-dev', function(){
+	gulp.src(jsSources)
+		.pipe(gulp.dest('builds/development/js'))
 });
