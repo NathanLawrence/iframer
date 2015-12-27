@@ -6,8 +6,12 @@ Uses JQuery and Tabletop.js to turn a div and script-based embed code into one t
 2. Set up a Google Sheet that closely resembles [this one](https://docs.google.com/spreadsheets/d/183BqQXLnw3ZtqGkB-d-bnFtk5PoPdx7gjmJocCzUeao/edit?usp=sharing). Column A should be labeled "Label" and column B should be labeled "Code".
 3. Go to File and choose "Publish to the web..."
 4. Choose Link, "Entire Document" and "Web page." as the options. Copy the URL and hit publish.
-5. Paste the URL into the iframer-vars.js file under the variable name sheetURL.
-6. Test and deploy to Amazon S3 or any other static hosting service.
+5. Paste the URL into the `components\iframer-vars.js` file under the variable name sheetURL.
+6. Navigate to the project directory in your terminal and install the dev dependencies for this project: `pip install`
+7. Prepare the dev version for testing: `gulp compile-dev`
+8. Manually upload the files in `builds/development` to your staging server and test as necessary. (See the note about DocumentCloud for why testing must be done server-side. If you aren't using DocumentCloud for your tests, you may be able to complete them locally.)
+9. Prepare the production version for deployment: `gulp compile-prod`
+10. Manually upload the files in `builds/production` to your production server and do any final tests.
 
 # Daily Use Instructions
 1. Copy the embed code.
