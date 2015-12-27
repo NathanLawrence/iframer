@@ -17,7 +17,7 @@ Uses JQuery and Tabletop.js to turn a div and script-based embed code into one t
 1. Copy the embed code.
 2. Paste it into the "code" space in a new row of the Google Sheet.
 3. Put whatever you want (including nothing) into the "Label" column. It's there for your own internal use.
-4. Look to the left and use the row number for your URL. If your row number is 5, for example, and your iframer is deployed to silly.com/iframer, then your URL might be "http://www.silly.com/iframer/index.html?row=5".
+4. Look to the left and use the row number for your URL. If your row number is 5, for example, and your iframer is deployed to `silly.com/iframer`, then your URL might be `"http://www.silly.com/iframer/index.html?row=5"`.
 
 ## A Hint About Google Sheets
 By default, Google will assume you're trying to paste into multiple rows if your text has newline characters in it. To avoid this, simply double-click on the cell before pasting.
